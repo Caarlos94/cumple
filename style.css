@@ -28,5 +28,23 @@ p > a:first-of-type {
 
 }
 body {
+
 	overflow: hidden;
+}
+
+img {
+	position: absolute; /* Posición absoluta para que se pueda mover libremente */
+	top: 1300px; /* Posición inicial arriba de la pantalla */
+	left: 50%; /* Centrar horizontalmente */
+	transform: translateX(-50%) rotate(0deg); /* Centrar horizontalmente y aplicar rotación inicial */
+	animation-name: moverNotificacion;
+	animation-duration: 5s; /* Duración de la animación (en segundos) */
+	animation-iteration-count: infinite; /* Repetir la animación infinitamente */
+	animation-timing-function: ease-in-out; /* Función de temporización para suavizar la animación */
+}
+
+/* Definición de la animación */
+@keyframes moverNotificacion {
+	0%, 30% { top: 1300px; opacity: 0; transform: translateX(-50%) rotate(0deg); } /* Posición inicial, transparencia y rotación */
+	30%, 100% { top: 1300px; opacity: 1; transform: translateX(-50%) rotate(360deg); } /* Mover hacia abajo, aparecer y dar una vuelta completa */
 }
