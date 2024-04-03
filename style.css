@@ -34,7 +34,7 @@ body {
 
 img {
 	position: absolute; /* Posición absoluta para que se pueda mover libremente */
-	top: 1200px; /* Posición inicial arriba de la pantalla */
+	top: 1175px; /* Posición inicial arriba de la pantalla */
 	left: 50%; /* Centrar horizontalmente */
 	transform: translateX(-50%) rotate(0deg); /* Centrar horizontalmente y aplicar rotación inicial */
 	animation-name: moverNotificacion;
@@ -45,6 +45,6 @@ img {
 
 /* Definición de la animación */
 @keyframes moverNotificacion {
-	0%, 30% { top: 1200px; opacity: 0; transform: translateX(-50%) rotate(0deg); } /* Posición inicial, transparencia y rotación */
-	30%, 100% { top: 1200px; opacity: 1; transform: translateX(-50%) rotate(360deg); } /* Mover hacia abajo, aparecer y dar una vuelta completa */
+	0%, 30% { top: 1175px; opacity: 0; transform: translateX(-50%) rotate(0deg); } /* Posición inicial, transparencia y rotación */
+	30%, 100% { top: 1175px; opacity: 1; transform: translateX(-50%) rotate(360deg); } /* Mover hacia abajo, aparecer y dar una vuelta completa */
 }
